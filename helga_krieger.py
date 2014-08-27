@@ -1,7 +1,7 @@
 from helga.plugins import command
 
 
-@command('krieger', help='film film FILM FILM FILM! FILM!! FILM!!!')
+@command('krieger', aliases=['kreiger'], help='film film FILM FILM FILM! FILM!! FILM!!!')
 def krieger(client, channel, nick, message, cmd, args):
     """
     film film FILM FILM FILM! FILM!! FILM!!!
