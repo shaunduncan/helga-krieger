@@ -6,9 +6,9 @@ def krieger(client, channel, nick, message, cmd, args):
     """
     film film FILM FILM FILM! FILM!! FILM!!!
     """
-    fmt = '{0} {0} {1} {1} {1}! {1}!! {1}!!!'
+    fmt = u'{0} {0} {1} {1} {1}! {1}!! {1}!!!'
     try:
         word = args[0]
     except IndexError:
-        word = 'film'
+        word = u'film'
     return fmt.format(word.lower(), word.upper())
